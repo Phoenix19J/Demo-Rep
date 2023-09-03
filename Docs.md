@@ -1,4 +1,11 @@
-GIT Basic Commands ------->
+GIT Commands Sheet ------------>
+
+## Basic Terminal Commands
+cd
+ls -hidden
+mkdir
+clear
+
 
 git clone [URL]
 git init
@@ -7,9 +14,9 @@ git remote remove [alias-origin/upstream] [URL-SSH/HTTPS]
 git remote -v
 
 
-git  add .
-git  add <file.txt>
-git  add folder/
+git add .
+git add <file.txt>
+git add folder/
 
 
 git commit -m "The message for your commit"
@@ -23,12 +30,15 @@ git reset --hard <hashcode>                         # removes previous commit an
 git reset HEAD~1                                    # removes 1 previous commit in history without losing unstaged changes --hard to remove both
 
 
+git rebase -i <hashcode>
+git reflog
 git log --oneline
 git log --graph --oneline
 git log --pretty=oneline
 git status
 git fetch --prune
 git diff
+git blame                                           <-----No need to use its more better on github----->
 
 
 git restore --staged <file.txt>                     # removes a file from staged
@@ -73,4 +83,6 @@ git tag <Version> -m "The message for a tag"        # creates a git tag with a m
 git tag <Version> [Commit-ID]                       # creates a git tag on a particular commit in history
 git show <Version>                                  # show details of a particular version ie.tag
 git tag --delete <Version>                          # delete a particular version ie.tag
-git push [alias-origin] [branch-main...] -tags      # pushes local branch commits to remote branch commits -tags pushes all local tags to remote
+git -a -f <version> [Commit-ID]                     # renames a git tag on a particular commit in history
+git push [origin] [branch-main] <tag> --tags        # pushes a local tag commit to remote branch --tags pushes all local tags to remote
+
