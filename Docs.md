@@ -43,7 +43,7 @@ git stash apply [1]                                 # applies changes on workspa
 git stash list                                      # shows all stash list
 git stash save "message for your stash"             # saves a stash with a message
 git stash drop [0]                                  # drops latest stash from the list or a specific one [0] ie.stash@{0}
-git stash clear                                     # DELETES all stash 
+git stash clear                                     # DELETES all stash
 
 
 git push [alias-origin] [branch-main...]            # pushes local branch commits to remote branch commits
