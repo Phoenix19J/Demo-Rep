@@ -46,6 +46,8 @@ git log --oneline
 git log --graph --oneline
 git log --pretty=oneline
 ------------------------------ REALLY GOOD COMMANDS
+git diff
+------------------------------ REALLY GOOD COMMANDS
 git status
 ------------------------------ REALLY GOOD COMMANDS
 git cherry-pick
