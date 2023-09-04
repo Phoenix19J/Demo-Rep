@@ -82,7 +82,7 @@ git tag -a <Version>                                # creates a annotated git ta
 git tag <Version> -m "The message for a tag"        # creates a git tag with a message
 git tag <Version> [Commit-ID]                       # creates a git tag on a particular commit in history
 git show <Version>                                  # show details of a particular version ie.tag
-git tag --delete <Version>                          # delete a particular version ie.tag
+git tag --delete <Version>                          # delete a particular version ie.tag locally not remote, use github to delete remote tags easily
 git -a -f <version> [Commit-ID]                     # renames a git tag on a particular commit in history
 git push [origin] [branch-main] <tag> --tags        # pushes a local tag commit to remote branch --tags pushes all local tags to remote
 
