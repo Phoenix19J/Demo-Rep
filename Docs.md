@@ -30,6 +30,7 @@ git commit --amend
 git commit --amend -m "New name to change for prev commit"
 
 
+git checkout <hashcode>                             # checks out to a specific commit in a detached HEAD state to save changes make a new branch
 git revert <hashcode>                               # reverts a specified commit but creates a new commit which mentions reverted commit
 git reset <hashcode>                                # removes previous commit and unstages changes in workspace
 git reset --hard <hashcode>                         # removes previous commit and deletes changes in workspace
