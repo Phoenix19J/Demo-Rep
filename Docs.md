@@ -58,7 +58,8 @@ git blame                                           <-----No need to use, its be
 
 
 git restore --staged <file.txt>                     # removes a file from staged to unstage
-git restore <file.txt>                              # discard changes of a unstaged file in working directory ## same command can also bring back any deleted unstaged file by mistake
+git restore <file.txt>                              # discard changes of a unstaged or new file in working directory ## same command can also bring back any deleted unstaged file by mistake
+git restore .                                       # discard changes of all unstaged and new files in working directory
 git clean -f -i -n                                  # removes any untracked files -n is --dry-run
 
 
