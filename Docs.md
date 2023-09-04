@@ -30,6 +30,7 @@ git commit --amend
 git commit --amend -m "New name to change for prev commit"
 
 
+git revert <hashcode>                               # reverts a specified commit but creates a new commit which mentions reverted commit
 git reset <hashcode>                                # removes previous commit and unstages changes in workspace
 git reset --hard <hashcode>                         # removes previous commit and deletes changes in workspace
 git reset HEAD~1                                    # removes 1 previous commit in history without losing unstaged changes --hard to remove both
