@@ -25,7 +25,7 @@ git add folder/
 
 
 git commit -m "The message for your commit"
-git commit -am "..."                                # commits all staged changes and give a message
+git commit -am "..."                                # commits [-a] all staged changes and give a message
 git commit --amend
 git commit --amend -m "New name to change for prev commit"
 
@@ -37,19 +37,25 @@ git reset --hard <hashcode>                         # removes previous commit an
 git reset HEAD~1                                    # removes 1 previous commit in history without losing unstaged changes --hard to remove both
 
 
+------------------------------ REALLY GOOD COMMANDS
 git rebase -i <hashcode>
+------------------------------ REALLY GOOD COMMANDS
 git reflog
+------------------------------ REALLY GOOD COMMANDS
 git log --oneline
 git log --graph --oneline
 git log --pretty=oneline
+------------------------------ REALLY GOOD COMMANDS
 git status
+------------------------------ REALLY GOOD COMMANDS
 git cherry-pick
-git fetch --prune
-git diff
+------------------------------ REALLY GOOD COMMANDS
+.gitignore                                          # Its a file to be made in repository, which ignores files/folders for git to track
+------------------------------ REALLY GOOD COMMANDS
 git blame                                           <-----No need to use, its better on github----->
 
 
-git restore --staged <file.txt>                     # removes a file from staged
+git restore --staged <file.txt>                     # removes a file from staged to unstage
 git restore <file.txt>                              # discard changes of a unstaged file in working directory
 git clean -f -i -n                                  # removes any untracked files -n is --dry-run
 
@@ -65,8 +71,8 @@ git stash clear                                     # DELETES all stash
 
 
 git push [alias-origin] [branch-main...]            # pushes local branch commits to remote branch commits
-git push [alias-origin] [branch-main...] -f         # pushes local branch commits to remote branch commits -f FORCEFULLY UPDATE REMOTE
-git push [alias-origin] -all                        # pushes local branch commits to remote branch commits -all pushes all branches to remote
+git push [alias-origin] [branch-main...] -f         # pushes local branch commits to remote branch commits [-f] FORCEFULLY UPDATE REMOTE
+git push [alias-origin] -all                        # pushes local branch commits to remote branch commits [-all] pushes all branches to remote
 git pull [alias-origin/upstream] [branch-main...]   # fetch and merge commits from the remote branch
 
 
@@ -92,5 +98,5 @@ git tag <Version> [Commit-ID]                       # creates a git tag on a par
 git show <Version>                                  # show details of a particular version ie.tag
 git tag --delete <Version>                          # delete a particular version ie.tag locally not remote, use github to delete remote tags easily
 git -a -f <version> [Commit-ID]                     # renames a git tag on a particular commit in history
-git push [origin] [branch-main] <tag> --tags        # pushes a local tag commit to remote branch --tags pushes all local tags to remote
+git push [origin] [branch-main] <tag> --tags        # pushes a local tag commit to remote branch [--tags] pushes all local tags to remote
 
