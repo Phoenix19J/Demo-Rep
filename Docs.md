@@ -1,4 +1,9 @@
-GIT Commands Sheet ------------>
+
+
+
+<------------------------------------------------ ALL NECESSARY GIT COMMANDS SHEET ------------------------------------------------>
+
+
 
 ## Basic Terminal Commands
 cd
@@ -36,9 +41,10 @@ git log --oneline
 git log --graph --oneline
 git log --pretty=oneline
 git status
+git cherry-pick
 git fetch --prune
 git diff
-git blame                                           <-----No need to use its more better on github----->
+git blame                                           <-----No need to use, its better on github----->
 
 
 git restore --staged <file.txt>                     # removes a file from staged
