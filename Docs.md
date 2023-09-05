@@ -25,7 +25,7 @@ git add folder/
 
 
 git commit -m "The message for your commit"
-git commit -am "..."                                # commits [-a] all staged changes and give a message
+git commit -am "..."                                # add files and commits [-a] all staged changes in one command
 git commit --amend
 git commit --amend --no-edit                        # commits changes and ammends the recent commit without changing message
 git commit --amend -m "Rename Previous Commit"
