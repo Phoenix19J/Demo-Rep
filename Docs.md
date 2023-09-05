@@ -27,7 +27,8 @@ git add folder/
 git commit -m "The message for your commit"
 git commit -am "..."                                # commits [-a] all staged changes and give a message
 git commit --amend
-git commit --amend -m "New name to change for prev commit"
+git commit --amend --no-edit                        # commits changes and ammends the recent commit without changing message
+git commit --amend -m "Rename Previous Commit"
 
 
 git checkout <hashcode>                             # checks out to a specific commit in a detached HEAD state to save changes make a new branch
@@ -80,6 +81,7 @@ git pull [alias-origin/upstream] [branch-main...]   # fetch and merge commits fr
 
 
 git branch [Branch_Name]                            # Creates a new branch
+git branch [Branch_Name] <hashcode>                 # Creates a new branch from a specified commit
 git checkout [Branch_Name]                          # Selects the specified branch
 git branch -m [New_branch_Name]                     # Changes the name of the selected branch to a new name specified
 git branch -m [Old_Branch_name] [New_branch_Name]   # Changes the name of a branch to new provided name 
