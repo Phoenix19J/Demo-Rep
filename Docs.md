@@ -33,6 +33,7 @@ git commit --amend -m "Rename Previous Commit"
 
 git checkout <hashcode>                             # checks out to a specific commit in a detached HEAD state to save changes make a new branch
 git revert <hashcode>                               # reverts a specified commit but creates a new commit which mentions reverted commit
+git reset                                           # unstages changes in workspace
 git reset <hashcode>                                # removes previous commit and unstages changes in workspace
 git reset --hard <hashcode>                         # removes previous commit and deletes changes in workspace
 git reset HEAD~1                                    # removes 1 previous commit in history without losing unstaged changes --hard to remove both
